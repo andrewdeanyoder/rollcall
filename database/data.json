@@ -13,40 +13,40 @@
       "firstName": "Zach",
       "lastName": "Mansell",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 2,
       "firstName": "Andrew",
       "lastName": "Yoder",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 3,
       "firstName": "Tyler",
       "lastName": "Jones",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 4,
       "firstName": "Ben",
       "lastName": "Chasin",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 5,
       "firstName": "Tristan",
       "lastName": "Smith",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 6,
@@ -69,40 +69,40 @@
       "firstName": "Brennan",
       "lastName": "Caldwell",
       "imageURL": "",
-      "AM_Route": "Bus 1",
-      "PM_Route": "Bus 1"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 9,
       "firstName": "Steven",
       "lastName": "Trager",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 10,
       "firstName": "Chandra",
       "lastName": "Nguyen",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 11,
       "firstName": "Stephanye",
       "lastName": "Blakely",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 12,
       "firstName": "Cinzia",
       "lastName": "Borello",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 13,
@@ -117,32 +117,32 @@
       "firstName": "Doruk",
       "lastName": "Gurleyen",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 15,
       "firstName": "Ryan",
       "lastName": "Zigler",
       "imageURL": "",
-      "AM_Route": "Bus 1",
-      "PM_Route": "Bus 1"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 16,
       "firstName": "Elvin",
       "lastName": "Kosova",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 17,
       "firstName": "Owen",
       "lastName": "Arthur",
       "imageURL": "",
-      "AM_Route": "Bus 1",
-      "PM_Route": "Bus 1"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 18,
@@ -157,8 +157,8 @@
       "firstName": "Nathan",
       "lastName": "Vu",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 20,
@@ -173,56 +173,56 @@
       "firstName": "Mike",
       "lastName": "Shertz",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 22,
       "firstName": "Henry",
       "lastName": "Bell",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 23,
       "firstName": "Meredith",
       "lastName": "Myers",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 24,
       "firstName": "Hewah",
       "lastName": "Bahrami",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 25,
       "firstName": "Matthew",
       "lastName": "Wigglesworth",
       "imageURL": "",
-      "AM_Route": "Bus 3",
-      "PM_Route": "Bus 3"
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
     },
     {
       "id": 26,
       "firstName": "Jackson",
       "lastName": "Todd",
       "imageURL": "",
-      "AM_Route": "Bus 2",
-      "PM_Route": "Bus 2"
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
     },
     {
       "id": 27,
       "firstName": "Mark",
       "lastName": "Picel",
       "imageURL": "",
-      "AM_Route": "Bus 1",
-      "PM_Route": "Bus 1"
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
     },
     {
       "id": 28,
@@ -262,16 +262,16 @@
       "id": 0,
       "start_date": "",
       "end_date": "",
-      "text": "Incididunt veniam mollit mollit ut id laboris anim et eu culpa.",
-      "student_id": 0,
-      "route_id": 0
+      "text": "Ea deserunt sit dolore ullamco cillum excepteur occaecat id ipsum.",
+      "student_id": 25,
+      "route_id": 2
     },
     {
       "id": 1,
       "start_date": "",
       "end_date": "",
-      "text": "Adipisicing magna irure incididunt aliquip ex non consectetur amet anim aute.",
-      "student_id": 19,
+      "text": "Dolore culpa quis enim voluptate fugiat occaecat velit.",
+      "student_id": 24,
       "route_id": 1
     }
   ],

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { LoremIpsum } = require('lorem-ipsum');
 
-const outputPath = './data.json';
+const outputPath = './database/data.json';
 
 // utility function
 const random = function (min, max) {
