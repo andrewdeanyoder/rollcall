@@ -1,0 +1,315 @@
+{
+  "students": [
+    {
+      "id": 0,
+      "firstName": "Alex",
+      "lastName": "Coplin",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 1,
+      "firstName": "Zach",
+      "lastName": "Mansell",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 2,
+      "firstName": "Andrew",
+      "lastName": "Yoder",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 3,
+      "firstName": "Tyler",
+      "lastName": "Jones",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 4,
+      "firstName": "Ben",
+      "lastName": "Chasin",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 5,
+      "firstName": "Tristan",
+      "lastName": "Smith",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 6,
+      "firstName": "Blake",
+      "lastName": "Jones",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 7,
+      "firstName": "Steven",
+      "lastName": "Walker",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 8,
+      "firstName": "Brennan",
+      "lastName": "Caldwell",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 9,
+      "firstName": "Steven",
+      "lastName": "Trager",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 10,
+      "firstName": "Chandra",
+      "lastName": "Nguyen",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 11,
+      "firstName": "Stephanye",
+      "lastName": "Blakely",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 12,
+      "firstName": "Cinzia",
+      "lastName": "Borello",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 13,
+      "firstName": "Robert",
+      "lastName": "Walsh",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 14,
+      "firstName": "Doruk",
+      "lastName": "Gurleyen",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 15,
+      "firstName": "Ryan",
+      "lastName": "Zigler",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 16,
+      "firstName": "Elvin",
+      "lastName": "Kosova",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 17,
+      "firstName": "Owen",
+      "lastName": "Arthur",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 18,
+      "firstName": "Evan",
+      "lastName": "Kolb",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 19,
+      "firstName": "Nathan",
+      "lastName": "Vu",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 20,
+      "firstName": "Grace",
+      "lastName": "Lindelien",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 21,
+      "firstName": "Mike",
+      "lastName": "Shertz",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 22,
+      "firstName": "Henry",
+      "lastName": "Bell",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 23,
+      "firstName": "Meredith",
+      "lastName": "Myers",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 24,
+      "firstName": "Hewah",
+      "lastName": "Bahrami",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 25,
+      "firstName": "Matthew",
+      "lastName": "Wigglesworth",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 26,
+      "firstName": "Jackson",
+      "lastName": "Todd",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 27,
+      "firstName": "Mark",
+      "lastName": "Picel",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 28,
+      "firstName": "James",
+      "lastName": "Olivas",
+      "imageURL": "",
+      "AM_Route": "Bus 1",
+      "PM_Route": "Bus 1"
+    },
+    {
+      "id": 29,
+      "firstName": "Josh",
+      "lastName": "Rogen",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    },
+    {
+      "id": 30,
+      "firstName": "Joe",
+      "lastName": "Dry",
+      "imageURL": "",
+      "AM_Route": "Bus 3",
+      "PM_Route": "Bus 3"
+    },
+    {
+      "id": 31,
+      "firstName": "Jordan",
+      "lastName": "Pagni",
+      "imageURL": "",
+      "AM_Route": "Bus 2",
+      "PM_Route": "Bus 2"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 0,
+      "start_date": "",
+      "end_date": "",
+      "text": "Esse ipsum deserunt id ea pariatur ex proident tempor voluptate commodo.",
+      "student_id": 15,
+      "route_id": 2
+    },
+    {
+      "id": 1,
+      "start_date": "",
+      "end_date": "",
+      "text": "Fugiat irure cillum cillum laboris sit veniam eu.",
+      "student_id": 12,
+      "route_id": 2
+    },
+    {
+      "id": 2,
+      "start_date": "",
+      "end_date": "",
+      "text": "Magna velit reprehenderit laborum in.",
+      "student_id": 4,
+      "route_id": 0
+    },
+    {
+      "id": 3,
+      "start_date": "",
+      "end_date": "",
+      "text": "Excepteur minim culpa aliquip amet occaecat culpa.",
+      "student_id": 29,
+      "route_id": 2
+    },
+    {
+      "id": 4,
+      "start_date": "",
+      "end_date": "",
+      "text": "Fugiat esse exercitation est excepteur mollit anim eiusmod veniam qui irure velit enim.",
+      "student_id": 19,
+      "route_id": 2
+    },
+    {
+      "id": 5,
+      "start_date": "",
+      "end_date": "",
+      "text": "Eu sunt irure incididunt ea.",
+      "student_id": 22,
+      "route_id": 2
+    }
+  ],
+  "routes": {
+    "0": "Bus 1",
+    "1": "Bus 2",
+    "2": "Bus 3"
+  }
+}

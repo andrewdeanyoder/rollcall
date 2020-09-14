@@ -14,7 +14,8 @@
   },
   "homepage": "https://github.com/andrewdeanyoder/hrr47-mvp#readme",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "seed": "node database/data-generator.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
@@ -38,6 +39,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "lorem-ipsum": "^2.0.3",
     "nodemon": "^2.0.4"
   }
 }
