@@ -15,6 +15,7 @@
   "homepage": "https://github.com/andrewdeanyoder/hrr47-mvp#readme",
   "scripts": {
     "start": "nodemon server/server.js",
+    "build": "webpack --config webpack.config.js --watch",
     "test": "test",
     "seed": "node database/data-generator.js"
   },

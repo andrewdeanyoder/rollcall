@@ -17,6 +17,9 @@ class App extends React.Component {
       .then((data) => {
         console.log('data:', data);
       })
+      .catch((err) => {
+        console.log('an error occurred getting data:', err);
+      })
   }
 
   render() {
@@ -25,3 +28,5 @@ class App extends React.Component {
     );
   }
 }
+
+export default App;
