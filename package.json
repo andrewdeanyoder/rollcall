@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/andrewdeanyoder/hrr47-mvp#readme",
   "scripts": {
+    "start": "nodemon server/server.js",
     "test": "test",
     "seed": "node database/data-generator.js"
   },
