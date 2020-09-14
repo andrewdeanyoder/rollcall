@@ -35,4 +35,5 @@ bower_components/
 .flooignore
 
 # Data
-dataImages.json
+database/dataImages.json
+database/data.json

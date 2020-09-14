@@ -11,7 +11,11 @@ const random = function (min, max) {
 const data = {
   students: [],
   announcements: [],
-  routes: {0: 'Bus 1', 1: 'Bus 2', 2: 'Bus 3'}
+  routes: [
+    {0: 'Bus 1'},
+    {1: 'Bus 2'},
+    {2: 'Bus 3'}
+  ]
 };
 
 // ******** Generate Students ************* //
