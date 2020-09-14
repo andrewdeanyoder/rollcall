@@ -1,21 +1,30 @@
 import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
+import StudentGrid from './StudentGrid';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      students: [],
+      students: [{
+        id: 0,
+        firstName: 'Little Bobby',
+        lastName: 'Tables',
+        imageURL: '',
+        AM_Route: 'Bus 1',
+        PM_Route: 'Bus 1'
+      }],
       announcements: [],
       routes: []
     }
   }
 
+  // pulls all data from the api
   componentDidMount () {
     axios.get('/api/data')
-      .then((resp) => {
-        const {students, announcements, routes} = resp.data;
+      .then((res) => {
+        const {students, announcements, routes} = res.data;
         this.setState({
           students,
           announcements,
@@ -28,8 +37,11 @@ class App extends React.Component {
   }
 
   render() {
+    const { students, announcements } = this.state;
     return (
-      <div>Hello America!</div>
+      <div>Hello America!
+        <StudentGrid students={students} announcements={announcements}/>
+      </div>
     );
   }
 }
