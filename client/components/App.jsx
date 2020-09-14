@@ -14,8 +14,13 @@ class App extends React.Component {
 
   componentDidMount () {
     axios.get('/api/data')
-      .then((data) => {
-        console.log('data:', data);
+      .then((resp) => {
+        const {students, announcements, routes} = resp.data;
+        this.setState({
+          students,
+          announcements,
+          routes
+        });
       })
       .catch((err) => {
         console.log('an error occurred getting data:', err);
