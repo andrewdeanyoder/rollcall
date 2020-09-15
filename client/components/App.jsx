@@ -62,14 +62,14 @@ class App extends React.Component {
   render() {
     const { students, announcements, studentsPresent, notRiding } = this.state;
     return (
-      <div>
+      <Background>
         <StudentGrid
           students={students}
           announcements={announcements}
           studentsPresent={studentsPresent}
           notRiding={notRiding}
           studentClickHandler={this.studentClickHandler}/>
-      </div>
+      </Background>
     );
   }
 }

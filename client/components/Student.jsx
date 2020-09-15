@@ -10,10 +10,7 @@ const StudentImage = styled.img`
   max-width: 150px;
   border-radius: 50px;
   margin: 5px;
-  border: 10px solid ${(props) => {
-    // changes border based on whether the student is marked present
-    return props.isPresent ? 'green' : 'white';
-  }};
+  border: 10px solid ${props => props.border};
   filter: grayscale(${props => props.greyscale}) blur(${props => props.blur}px);
 `;
 
@@ -34,13 +31,15 @@ class Student extends React.Component {
   }
 
   render () {
-    const { student, key , studentClickHandler, isPresent, notRiding } = this.props;
-    // calculates the values to style the student Image
+    const { student , studentClickHandler, isPresent, notRiding } = this.props;
+    // calculates the values to style the student images
+    // based on whether they are marked present or notRiding
+    const border = isPresent ? 'green' : 'white';
     const greyscale = notRiding ? 1 : 0;
     const blur = notRiding ? 4 : 0;
     return (
       <Container onClick={studentClickHandler} id={student.id}>
-        <StudentImage src={student.imageURL} id={student.id} isPresent={isPresent} greyscale={greyscale} blur={blur}/>
+        <StudentImage src={student.imageURL} id={student.id} border={border} greyscale={greyscale} blur={blur}/>
         <StudentName id={student.id}>{student.firstName} {student.lastName}</StudentName>
       </Container>
     );
