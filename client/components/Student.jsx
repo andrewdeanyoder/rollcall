@@ -9,7 +9,7 @@ const Container = styled.div`
 const StudentImage = styled.img`
   max-width: 132px;
   border-radius: 50px;
-  margin: 4.75px;
+  margin: 5px;
   border: 8.5px solid ${props => props.border};
   filter: grayscale(${props => props.greyscale}) blur(${props => props.blur}px);
 `;
