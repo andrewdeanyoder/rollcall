@@ -1,15 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  max-width: 150px;
+`;
+
 const StudentImage = styled.img`
   max-width: 150px;
   border-radius: 50px;
 `;
 
-const StudentName = styled.span`
-  color: purple;
-  top: 40%;
+const StudentName = styled.div`
+  position: relative;
+  top: -35px;
   margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
 `;
 
 class Student extends React.Component {
@@ -20,10 +27,10 @@ class Student extends React.Component {
   render () {
     const { student } = this.props;
     return (
-      <div>
-        <StudentName>{student.firstName} {student.lastName}</StudentName>
+      <Container>
         <StudentImage src={student.imageURL} />
-      </div>
+        <StudentName>{student.firstName} {student.lastName}</StudentName>
+      </Container>
     );
   }
 }
