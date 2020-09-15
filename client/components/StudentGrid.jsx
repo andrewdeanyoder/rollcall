@@ -15,16 +15,18 @@ class StudentGrid extends React.Component {
   }
 
   render () {
-    const { students, announcements, studentsPresent, studentClickHandler } = this.props;
+    const { students, announcements, studentsPresent, notRiding, studentClickHandler } = this.props;
     return (
       <StyledFlex>
         {students.map((student) => {
-          // checks whether the student is marked present
+          // isPresent & notRiding check whether the student is marked as not riding the bus
+          // or is marked as present
           return (
             <Student
               key={student.id}
               student={student}
               isPresent={studentsPresent[student.id]}
+              notRiding={notRiding[student.id]}
               studentClickHandler={studentClickHandler}
             />
           )

@@ -18,7 +18,7 @@ class App extends React.Component {
       announcements: [],
       routes: [],
       studentsPresent: [],
-      notRiding: [,,,true,,true],
+      notRiding: [,,,true,,true,,,,,true],
       numStudents: 1,
     }
     this.studentClickHandler = this.studentClickHandler.bind(this);
@@ -60,13 +60,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { students, announcements, studentsPresent } = this.state;
+    const { students, announcements, studentsPresent, notRiding } = this.state;
     return (
       <div>
         <StudentGrid
           students={students}
           announcements={announcements}
           studentsPresent={studentsPresent}
+          notRiding={notRiding}
           studentClickHandler={this.studentClickHandler}/>
       </div>
     );
