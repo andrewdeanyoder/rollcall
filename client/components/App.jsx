@@ -18,6 +18,7 @@ class App extends React.Component {
       announcements: [],
       routes: []
     }
+    this.studentClickHandler = this.studentClickHandler.bind(this);
   }
 
   // pulls all data from the api
@@ -36,11 +37,15 @@ class App extends React.Component {
       })
   }
 
+  studentClickHandler(id) {
+    console.log(id + 'clicked!')
+  }
+
   render() {
     const { students, announcements } = this.state;
     return (
       <div>
-        <StudentGrid students={students} announcements={announcements}/>
+        <StudentGrid students={students} announcements={announcements} studentClickHandler={this.studentClickHandler}/>
       </div>
     );
   }

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   max-width: 180px;
+  max-height: 180px;
 `;
 
 const StudentImage = styled.img`
@@ -23,14 +24,26 @@ const StudentName = styled.div`
 class Student extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      active: false,
+    }
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    console.log('the event:', e.target.id);
+    this.props.studentClickHandler(e.target.id);
+    this.state = {
+      active: true,
+    }
   }
 
   render () {
-    const { student } = this.props;
+    const { student, key } = this.props;
     return (
-      <Container>
-        <StudentImage src={student.imageURL} />
-        <StudentName>{student.firstName} {student.lastName}</StudentName>
+      <Container onClick={this.handleClick} id={student.id}>
+        <StudentImage src={student.imageURL} id={student.id}/>
+        <StudentName id={student.id}>{student.firstName} {student.lastName}</StudentName>
       </Container>
     );
   }

@@ -15,11 +15,11 @@ class StudentGrid extends React.Component {
   }
 
   render () {
-    const { students, announcements } = this.props;
+    const { students, announcements, studentClickHandler } = this.props;
     return (
       <StyledFlex>
         {students.map((student) => {
-          return <Student student={student} />
+          return <Student key={student.id} student={student} studentClickHandler={studentClickHandler}/>
         })}
       </StyledFlex>
     );
