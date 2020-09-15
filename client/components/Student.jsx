@@ -2,19 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 159px;
+  max-height: 159px;
 `;
 
 const StudentImage = styled.img`
-  max-width: 150px;
+  max-width: 132px;
   border-radius: 50px;
-  margin: 5px;
-  border: 10px solid ${props => props.border};
+  margin: 4.75px;
+  border: 8.5px solid ${props => props.border};
   filter: grayscale(${props => props.greyscale}) blur(${props => props.blur}px);
 `;
 
 const StudentName = styled.div`
+  max-width: 100%;
   position: relative;
   top: -50px;
   text-align: center;
