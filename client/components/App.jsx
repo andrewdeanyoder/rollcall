@@ -16,7 +16,10 @@ class App extends React.Component {
         PM_Route: 'Bus 1'
       }],
       announcements: [],
-      routes: []
+      routes: [],
+      studentsPresent: [],
+      numStudents: 1,
+      plansChanged: [,,,true,,true],
     }
     this.studentClickHandler = this.studentClickHandler.bind(this);
   }
@@ -26,10 +29,12 @@ class App extends React.Component {
     axios.get('/api/data')
       .then((res) => {
         const {students, announcements, routes} = res.data;
+        const numStudents = students.length;
         this.setState({
           students,
           announcements,
-          routes
+          routes,
+          numStudents
         });
       })
       .catch((err) => {
@@ -38,7 +43,15 @@ class App extends React.Component {
   }
 
   studentClickHandler(id) {
-    console.log(id + 'clicked!')
+    console.log(id + ' clicked!')
+    this.setState((prevState) => {
+      // check if id is in plansChanged
+      if(this.state.plansChanged[id]) {
+        console.log('student isnt on the bus!');
+      }
+        // if not, change present
+      const nowPresent = prevState.studentsPresent;
+    });
   }
 
   render() {

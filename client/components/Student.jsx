@@ -9,8 +9,11 @@ const Container = styled.div`
 const StudentImage = styled.img`
   max-width: 150px;
   border-radius: 50px;
-  border: 10px solid white;
   margin: 5px;
+  border: 10px solid ${(props) => {
+    console.log('props: ', props);
+    return props.present ? 'green' : 'white';
+  }};
 `;
 
 const StudentName = styled.div`
@@ -25,7 +28,7 @@ class Student extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false,
+      present: false,
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -33,16 +36,17 @@ class Student extends React.Component {
   handleClick(e) {
     console.log('the event:', e.target.id);
     this.props.studentClickHandler(e.target.id);
-    this.state = {
-      active: true,
+    this.setState = {
+      present: true,
     }
   }
 
   render () {
     const { student, key } = this.props;
+    const { present } = this.state;
     return (
       <Container onClick={this.handleClick} id={student.id}>
-        <StudentImage src={student.imageURL} id={student.id}/>
+        <StudentImage src={student.imageURL} id={student.id} present={present}/>
         <StudentName id={student.id}>{student.firstName} {student.lastName}</StudentName>
       </Container>
     );
