@@ -18,8 +18,8 @@ class App extends React.Component {
       announcements: [],
       routes: [],
       studentsPresent: [],
+      notOnBus: [,,,true,,true],
       numStudents: 1,
-      plansChanged: [,,,true,,true],
     }
     this.studentClickHandler = this.studentClickHandler.bind(this);
   }
@@ -42,16 +42,19 @@ class App extends React.Component {
       })
   }
 
-  studentClickHandler(id) {
-    console.log(id + ' clicked!')
-    this.setState((prevState) => {
-      // check if id is in plansChanged
-      if(this.state.plansChanged[id]) {
-        console.log('student isnt on the bus!');
-      }
-        // if not, change present
-      const nowPresent = prevState.studentsPresent;
-    });
+  studentClickHandler(e) {
+    console.log(e.target.id + ' clicked!');
+    const { id } = e.target
+    // check if id is in notOnBus
+    if(!this.state.notOnBus[id]) {
+      console.log('student should be on the bus!');
+      this.setState((prevState) => {
+        // if not, mark them present
+        let presentNow = prevState.studentsPresent;
+        presentNow[id] = true;
+        return { studentsPresent : presentNow };
+      });
+    }
   }
 
   render() {

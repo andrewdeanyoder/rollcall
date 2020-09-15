@@ -11,7 +11,7 @@ const StudentImage = styled.img`
   border-radius: 50px;
   margin: 5px;
   border: 10px solid ${(props) => {
-    console.log('props: ', props);
+    // console.log('props: ', props);
     return props.present ? 'green' : 'white';
   }};
 `;
@@ -30,22 +30,13 @@ class Student extends React.Component {
     this.state = {
       present: false,
     }
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    console.log('the event:', e.target.id);
-    this.props.studentClickHandler(e.target.id);
-    this.setState = {
-      present: true,
-    }
   }
 
   render () {
-    const { student, key } = this.props;
+    const { student, key , studentClickHandler } = this.props;
     const { present } = this.state;
     return (
-      <Container onClick={this.handleClick} id={student.id}>
+      <Container onClick={studentClickHandler} id={student.id}>
         <StudentImage src={student.imageURL} id={student.id} present={present}/>
         <StudentName id={student.id}>{student.firstName} {student.lastName}</StudentName>
       </Container>
