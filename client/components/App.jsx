@@ -39,7 +39,7 @@ class App extends React.Component {
   render() {
     const { students, announcements } = this.state;
     return (
-      <div>Hello America!
+      <div>
         <StudentGrid students={students} announcements={announcements}/>
       </div>
     );

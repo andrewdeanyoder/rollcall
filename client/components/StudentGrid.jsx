@@ -11,7 +11,9 @@ class StudentGrid extends React.Component {
     const { students, announcements } = this.props;
     return (
       <div>
-        <Student student={students[0]} />
+        {students.map((student) => {
+          return <Student student={student} />
+        })}
       </div>
     );
   }
