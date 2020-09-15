@@ -18,7 +18,7 @@ class App extends React.Component {
       announcements: [],
       routes: [],
       studentsPresent: [],
-      notOnBus: [,,,true,,true],
+      notRiding: [,,,true,,true],
       numStudents: 1,
     }
     this.studentClickHandler = this.studentClickHandler.bind(this);
@@ -42,18 +42,20 @@ class App extends React.Component {
       })
   }
 
+  // handles clicks on a student portrait
   studentClickHandler(e) {
     console.log(e.target.id + ' clicked!');
     const { id } = e.target
-    // check if id is in notOnBus
-    if(!this.state.notOnBus[id]) {
-      console.log('student should be on the bus!');
+    // check if the student is marked as not riding today
+    if(!this.state.notRiding[id]) {
       this.setState((prevState) => {
-        // if not, mark them present
+        // if not, switch their state in the studentsPresent array
         let presentNow = prevState.studentsPresent;
-        presentNow[id] = true;
+        presentNow[id] = presentNow[id] ? null : true;
         return { studentsPresent : presentNow };
       });
+    } else {
+      console.log('student should not be on the bus!');
     }
   }
 
