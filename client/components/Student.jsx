@@ -12,7 +12,7 @@ const StudentImage = styled.img`
   margin: 5px;
   border: 10px solid ${(props) => {
     // console.log('props: ', props);
-    return props.present ? 'green' : 'white';
+    return props.isPresent ? 'green' : 'white';
   }};
 `;
 
@@ -33,11 +33,10 @@ class Student extends React.Component {
   }
 
   render () {
-    const { student, key , studentClickHandler } = this.props;
-    const { present } = this.state;
+    const { student, key , studentClickHandler, isPresent } = this.props;
     return (
       <Container onClick={studentClickHandler} id={student.id}>
-        <StudentImage src={student.imageURL} id={student.id} present={present}/>
+        <StudentImage src={student.imageURL} id={student.id} isPresent={isPresent}/>
         <StudentName id={student.id}>{student.firstName} {student.lastName}</StudentName>
       </Container>
     );

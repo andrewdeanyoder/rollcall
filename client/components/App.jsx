@@ -58,10 +58,14 @@ class App extends React.Component {
   }
 
   render() {
-    const { students, announcements } = this.state;
+    const { students, announcements, studentsPresent } = this.state;
     return (
       <div>
-        <StudentGrid students={students} announcements={announcements} studentClickHandler={this.studentClickHandler}/>
+        <StudentGrid
+          students={students}
+          announcements={announcements}
+          studentsPresent={studentsPresent}
+          studentClickHandler={this.studentClickHandler}/>
       </div>
     );
   }

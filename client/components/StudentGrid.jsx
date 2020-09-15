@@ -15,11 +15,19 @@ class StudentGrid extends React.Component {
   }
 
   render () {
-    const { students, announcements, studentClickHandler } = this.props;
+    const { students, announcements, studentsPresent, studentClickHandler } = this.props;
     return (
       <StyledFlex>
         {students.map((student) => {
-          return <Student key={student.id} student={student} studentClickHandler={studentClickHandler}/>
+          // checks whether the student is marked present
+          return (
+            <Student
+              key={student.id}
+              student={student}
+              isPresent={studentsPresent[student.id]}
+              studentClickHandler={studentClickHandler}
+            />
+          )
         })}
       </StyledFlex>
     );
