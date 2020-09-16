@@ -4,8 +4,7 @@ import styled from 'styled-components';
  const NavBar = (props) => {
    return (
      <div className={props.className}>
-      Attendance App
-
+        <span>Attendance App</span>
      </div>
    );
 }
@@ -13,7 +12,7 @@ import styled from 'styled-components';
 const StyledNavBar = styled(NavBar)`
   position: fixed;
   top: 46px;
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Lato,Helvetica,Arial,sans-serif;
 
 `;
 export default StyledNavBar;

@@ -5,7 +5,7 @@ import Student from './Student';
 const StyledFlex = styled.div`
   margin-top: 20px;
   max-width: 1000px;
-  max-height: 600px;
+  max-height: 580px;
   overflow: scroll;
   display: flex;
   flex-direction: row;

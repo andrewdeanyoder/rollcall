@@ -3,6 +3,7 @@ import axios from 'axios';
 import styled from 'styled-components';
 import StudentGrid from './StudentGrid';
 import StyledNavBar from './NavBar';
+import StyledSubmitButton from './SubmitButton'
 
 class App extends React.Component {
   constructor(props) {
@@ -71,6 +72,9 @@ class App extends React.Component {
           studentsPresent={studentsPresent}
           notRiding={notRiding}
           studentClickHandler={this.studentClickHandler}/>
+        <div>
+          <StyledSubmitButton />
+        </div>
       </div>
     );
   }
