@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
 import StudentGrid from './StudentGrid';
+import StyledNavBar from './NavBar';
 
 class App extends React.Component {
   constructor(props) {
@@ -63,6 +64,7 @@ class App extends React.Component {
     const { students, announcements, studentsPresent, notRiding } = this.state;
     return (
       <div>
+        <StyledNavBar />
         <StudentGrid
           students={students}
           announcements={announcements}

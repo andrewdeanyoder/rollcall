@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Student from './Student';
 
 const StyledFlex = styled.div`
+  margin-top: 20px;
   max-width: 1000px;
   max-height: 600px;
   overflow: scroll;
