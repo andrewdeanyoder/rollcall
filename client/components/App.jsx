@@ -48,10 +48,23 @@ class App extends React.Component {
   // handles clicks on a student portrait
   studentClickHandler(e) {
     const { id } = e.target
-    // check if the student is marked as not riding today
-    if(!this.state.notRiding[id]) {
+    const { notRiding, studentsPresent } = this.state;
+
+    let userResponse = false;
+    // if the student is marked as not riding today
+    if(notRiding[id] && !studentsPresent[id]) {
+      // give the user the option to override
+      userResponse = confirm('This student is not supposed to ride today.\n' +
+      'Are you sure they are riding the bus?\n' +
+      'Please only check yes after confirming with an administrator.');
+    }
+
+    // if the student is marked as riding the bus OR
+    // if the user overrode this option OR
+    // if the student is marked as not riding the bus but are already present
+    if(!notRiding[id] || userResponse || (notRiding[id] && studentsPresent[id])) {
       this.setState((prevState) => {
-        // if not, switch their state in the studentsPresent array
+        // switch their state in the studentsPresent array
         let presentNow = prevState.studentsPresent;
         presentNow[id] = presentNow[id] ? null : true;
         return { studentsPresent : presentNow };

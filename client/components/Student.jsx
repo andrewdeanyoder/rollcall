@@ -36,8 +36,8 @@ class Student extends React.Component {
     // calculates the values to style the student images
     // based on whether they are marked present or notRiding
     const border = isPresent ? 'green' : 'white';
-    const greyscale = notRiding ? 1 : 0;
-    const blur = notRiding ? 4 : 0;
+    const greyscale = !isPresent && notRiding ? 1 : 0;
+    const blur =  !isPresent && notRiding ? 4 : 0;
     return (
       <Container onClick={studentClickHandler} id={student.id}>
         <StudentImage src={student.imageURL} id={student.id} border={border} greyscale={greyscale} blur={blur}/>
