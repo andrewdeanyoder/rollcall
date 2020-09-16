@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import Student from './Student';
 
+// When adding the Nav-bar add margin-top: 20px (height of navbar)
+// change max-height to 600 - height of navbar
+
 const StyledFlex = styled.div`
-  margin-top: 20px;
   max-width: 1000px;
-  max-height: 580px;
+  max-height: 600px;
   overflow: scroll;
   display: flex;
   flex-direction: row;

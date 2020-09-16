@@ -65,7 +65,6 @@ class App extends React.Component {
     const { students, announcements, studentsPresent, notRiding } = this.state;
     return (
       <div>
-        <StyledNavBar />
         <StudentGrid
           students={students}
           announcements={announcements}
