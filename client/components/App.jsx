@@ -24,6 +24,7 @@ class App extends React.Component {
       numStudents: 1,
     }
     this.studentClickHandler = this.studentClickHandler.bind(this);
+    this.submitClickHandler = this.submitClickHandler.bind(this);
   }
 
   // pulls all data from the api
@@ -46,7 +47,6 @@ class App extends React.Component {
 
   // handles clicks on a student portrait
   studentClickHandler(e) {
-    console.log(e.target.id + ' clicked!');
     const { id } = e.target
     // check if the student is marked as not riding today
     if(!this.state.notRiding[id]) {
@@ -56,9 +56,25 @@ class App extends React.Component {
         presentNow[id] = presentNow[id] ? null : true;
         return { studentsPresent : presentNow };
       });
-    } else {
-      console.log('student should not be on the bus!');
     }
+  }
+
+  submitClickHandler() {
+    const { studentsPresent, notRiding, students } = this.state;
+    let studentsMissing = [];
+    // iterate through students
+    for (var i = 0; i < students.length; i++) {
+      // if student is not present and is riding the bus
+      if(!studentsPresent[i] && !notRiding[i])
+      {
+        studentsMissing.push(students[i].firstName + ' ' + students[i].lastName);
+      }
+    }
+    const prompt = `The following students are marked absent.\n\
+    ${studentsMissing.join('\n')}\n\
+    Are you sure you want to proceed?`;
+    let result = confirm(prompt);
+
   }
 
   render() {
@@ -72,7 +88,7 @@ class App extends React.Component {
           notRiding={notRiding}
           studentClickHandler={this.studentClickHandler}/>
         <div>
-          <StyledSubmitButton />
+          <StyledSubmitButton clickHandler={this.submitClickHandler}/>
         </div>
       </div>
     );

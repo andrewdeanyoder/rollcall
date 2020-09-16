@@ -6,7 +6,7 @@ import Student from './Student';
 // change max-height to 600 - height of navbar
 
 const StyledFlex = styled.div`
-  max-width: 1000px;
+  max-width: 830px;
   max-height: 600px;
   overflow: scroll;
   display: flex;

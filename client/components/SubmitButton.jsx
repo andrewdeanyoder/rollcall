@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SubmitButton = (props) => {
   return (
-    <button className={props.className}>Submit Attendance</button>
+    <button onClick={props.clickHandler} className={props.className}>Submit Attendance</button>
   )
 }
 
