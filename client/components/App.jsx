@@ -20,7 +20,7 @@ class App extends React.Component {
       announcements: [],
       routes: [],
       studentsPresent: [],
-      notRiding: [,,,true,,true,,,,,true],
+      notRiding: [true,,,,,,,true,,,true],
       numStudents: 1,
     }
     this.studentClickHandler = this.studentClickHandler.bind(this);
@@ -83,11 +83,18 @@ class App extends React.Component {
         studentsMissing.push(students[i].firstName + ' ' + students[i].lastName);
       }
     }
+
+    // prompt user to confirm absent students
     const prompt = `The following students are marked absent.\n\
     ${studentsMissing.join('\n')}\n\
     Are you sure you want to proceed?`;
     let result = confirm(prompt);
 
+    // TODO: submit attendance results to database
+    // use helper function?
+    if(result) {
+      alert('Attendance submitted!');
+    }
   }
 
   render() {
