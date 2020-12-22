@@ -4,19 +4,16 @@ import styled from 'styled-components';
 import StudentGrid from './StudentGrid';
 import StyledNavBar from './NavBar';
 import StyledSubmitButton from './SubmitButton'
+import { Student } from '../models/Models';
+import { sampleStudent } from '../data/sample'
 
 class App extends React.Component {
-  constructor(props: {} | Readonly<{}>) {
+  constructor(props: {
+    student: Student
+  } | Readonly<{}>) {
     super(props);
     this.state = {
-      students: [{
-        id: 0,
-        firstName: 'Little Bobby',
-        lastName: 'Tables',
-        imageURL: '',
-        AM_Route: 'Bus 1',
-        PM_Route: 'Bus 1'
-      }],
+      students: [sampleStudent],
       //announcements: [],
       //routes: [],
       studentsPresent: [],
@@ -28,7 +25,7 @@ class App extends React.Component {
   }
 
   // pulls all data from the api
-  componentDidMount () {
+  componentDidMount ()
     axios.get('/api/data')
       .then((res) => {
         const {students, announcements, routes} = res.data;
