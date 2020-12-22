@@ -6,7 +6,7 @@ import StyledNavBar from './NavBar';
 import StyledSubmitButton from './SubmitButton'
 
 class App extends React.Component {
-  constructor(props) {
+  constructor(props: {} | Readonly<{}>) {
     super(props);
     this.state = {
       students: [{
@@ -17,8 +17,8 @@ class App extends React.Component {
         AM_Route: 'Bus 1',
         PM_Route: 'Bus 1'
       }],
-      announcements: [],
-      routes: [],
+      //announcements: [],
+      //routes: [],
       studentsPresent: [],
       notRiding: [true,,,,,,,true,,,true],
       numStudents: 1,
@@ -46,7 +46,7 @@ class App extends React.Component {
   }
 
   // handles clicks on a student portrait
-  studentClickHandler(e) {
+  studentClickHandler(e: { target: { id: any; }; }) {
     const { id } = e.target
     const { notRiding, studentsPresent } = this.state;
 
