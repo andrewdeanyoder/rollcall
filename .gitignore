@@ -38,3 +38,6 @@ bower_components/
 # Data
 database/dataImages.json
 database/data.json
+
+# Photos
+Screen*
