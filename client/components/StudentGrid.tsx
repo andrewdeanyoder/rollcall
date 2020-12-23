@@ -14,13 +14,24 @@ const StyledFlex = styled.div`
   flex-wrap: wrap;
 `;
 
-class StudentGrid extends React.Component {
-  constructor(props) {
+interface IProps {
+  students: Student[];
+  // announcements: ;
+  studentsPresent: boolean[];
+  notRiding: any[];
+  studentClickHandler: (e: MouseEvent) => void;
+}
+
+interface IState {
+}
+
+class StudentGrid extends React.Component <IProps, IState> {
+  constructor(props: IProps) {
     super(props);
   }
 
   render () {
-    const { students, announcements, studentsPresent, notRiding, studentClickHandler } = this.props;
+    const { students, studentsPresent, notRiding, studentClickHandler } = this.props;
     return (
       <StyledFlex>
         {students.map((student) => {

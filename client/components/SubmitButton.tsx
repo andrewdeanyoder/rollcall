@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import styled from 'styled-components';
 
-const SubmitButton = (props) => {
+interface IProps {
+  clickHandler: (e: MouseEvent) => void;
+  className: string;
+}
+
+const SubmitButton = (props: IProps) => {
   return (
     <button onClick={props.clickHandler} className={props.className}>Submit Attendance</button>
   )

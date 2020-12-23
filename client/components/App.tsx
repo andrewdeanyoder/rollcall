@@ -7,11 +7,18 @@ import StyledSubmitButton from './SubmitButton'
 import { Student } from '../models/Models';
 import { sampleStudent } from '../data/sample'
 
-class App extends React.Component {
-  constructor(props: {
-    student: Student
-  } | Readonly<{}>) {
-    super(props);
+interface IProps {}
+
+interface IState {
+  students: Student[];
+  studentsPresent: any[];
+  notRiding: any[];
+  numStudents: number;
+}
+
+class App extends React.Component <IProps, IState> {
+  constructor(props: IProps | undefined | Readonly<IProps>) {
+    super(props || {});
     this.state = {
       students: [sampleStudent],
       //announcements: [],
@@ -25,15 +32,15 @@ class App extends React.Component {
   }
 
   // pulls all data from the api
-  componentDidMount ()
+  componentDidMount () {
     axios.get('/api/data')
       .then((res) => {
-        const {students, announcements, routes} = res.data;
+        const {students, /*announcements,*/ routes} = res.data;
         const numStudents = students.length;
         this.setState({
           students,
-          announcements,
-          routes,
+          //announcements,
+          //routes,
           numStudents
         });
       })
@@ -69,7 +76,7 @@ class App extends React.Component {
     }
   }
 
-  submitClickHandler() {
+  submitClickHandler() : void {
     const { studentsPresent, notRiding, students } = this.state;
     let studentsMissing = [];
     // iterate through students
@@ -95,12 +102,12 @@ class App extends React.Component {
   }
 
   render() {
-    const { students, announcements, studentsPresent, notRiding } = this.state;
+    const { students, /* announcements ,*/ studentsPresent, notRiding } = this.state;
     return (
       <div>
         <StudentGrid
           students={students}
-          announcements={announcements}
+          //announcements={announcements}
           studentsPresent={studentsPresent}
           notRiding={notRiding}
           studentClickHandler={this.studentClickHandler}/>

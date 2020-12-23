@@ -20,21 +20,15 @@ var react_1 = __importDefault(require("react"));
 var axios_1 = __importDefault(require("axios"));
 var StudentGrid_1 = __importDefault(require("./StudentGrid"));
 var SubmitButton_1 = __importDefault(require("./SubmitButton"));
+var sample_1 = require("../data/sample");
 var App = /** @class */ (function (_super) {
     __extends(App, _super);
     function App(props) {
-        var _this = _super.call(this, props) || this;
+        var _this = _super.call(this, props || {}) || this;
         _this.state = {
-            students: [{
-                    id: 0,
-                    firstName: 'Little Bobby',
-                    lastName: 'Tables',
-                    imageURL: '',
-                    AM_Route: 'Bus 1',
-                    PM_Route: 'Bus 1'
-                }],
-            announcements: [],
-            routes: [],
+            students: [sample_1.sampleStudent],
+            //announcements: [],
+            //routes: [],
             studentsPresent: [],
             notRiding: [true, , , , , , , true, , , true],
             numStudents: 1,
@@ -48,12 +42,12 @@ var App = /** @class */ (function (_super) {
         var _this = this;
         axios_1.default.get('/api/data')
             .then(function (res) {
-            var _a = res.data, students = _a.students, announcements = _a.announcements, routes = _a.routes;
+            var _a = res.data, students = _a.students, /*announcements,*/ routes = _a.routes;
             var numStudents = students.length;
             _this.setState({
                 students: students,
-                announcements: announcements,
-                routes: routes,
+                //announcements,
+                //routes,
                 numStudents: numStudents
             });
         })
@@ -105,9 +99,11 @@ var App = /** @class */ (function (_super) {
         }
     };
     App.prototype.render = function () {
-        var _a = this.state, students = _a.students, announcements = _a.announcements, studentsPresent = _a.studentsPresent, notRiding = _a.notRiding;
+        var _a = this.state, students = _a.students, /* announcements ,*/ studentsPresent = _a.studentsPresent, notRiding = _a.notRiding;
         return (react_1.default.createElement("div", null,
-            react_1.default.createElement(StudentGrid_1.default, { students: students, announcements: announcements, studentsPresent: studentsPresent, notRiding: notRiding, studentClickHandler: this.studentClickHandler }),
+            react_1.default.createElement(StudentGrid_1.default, { students: students, 
+                //announcements={announcements}
+                studentsPresent: studentsPresent, notRiding: notRiding, studentClickHandler: this.studentClickHandler }),
             react_1.default.createElement("div", null,
                 react_1.default.createElement(SubmitButton_1.default, { clickHandler: this.submitClickHandler }))));
     };

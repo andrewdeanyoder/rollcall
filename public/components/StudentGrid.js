@@ -32,7 +32,7 @@ var StudentGrid = /** @class */ (function (_super) {
         return _super.call(this, props) || this;
     }
     StudentGrid.prototype.render = function () {
-        var _a = this.props, students = _a.students, announcements = _a.announcements, studentsPresent = _a.studentsPresent, notRiding = _a.notRiding, studentClickHandler = _a.studentClickHandler;
+        var _a = this.props, students = _a.students, studentsPresent = _a.studentsPresent, notRiding = _a.notRiding, studentClickHandler = _a.studentClickHandler;
         return (react_1.default.createElement(StyledFlex, null, students.map(function (student) {
             // isPresent & notRiding check whether the student is marked as not riding the bus
             // or is marked as present

@@ -1,5 +1,17 @@
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import styled from 'styled-components';
+import { Student as StudentModel } from '../models/Models'
+
+interface IProps {
+  student: StudentModel;
+  studentClickHandler: (e: MouseEvent) => void;
+  isPresent: boolean;
+  notRiding: boolean;
+}
+
+interface IState {
+
+}
 
 const Container = styled.div`
   max-width: 159px;
@@ -23,8 +35,8 @@ const StudentName = styled.div`
   font-family: Helvetica, Arial, sans-serif;
 `;
 
-class Student extends React.Component {
-  constructor(props) {
+class Student extends React.Component <IProps, IState> {
+  constructor(props: IProps) {
     super(props);
     this.state = {
       present: false,
